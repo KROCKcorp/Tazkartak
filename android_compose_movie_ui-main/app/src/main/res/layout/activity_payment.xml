@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="370dp"
+        android:layout_height="216dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.159"
+        app:cardBackgroundColor="#616568"
+        android:layout_marginBottom="180dp"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradients">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="120dp"
+
+
+                android:hint="VALID THRU"
+                android:textColorHint="@color/white"
+                android:textSize="13dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="120dp"
+
+
+                android:hint="VALID THRU"
+                android:textColorHint="@color/white"
+                android:textSize="13dp" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="78dp"
+            android:layout_height="53dp"
+            android:layout_marginLeft="280dp"
+            app:srcCompat="@drawable/mslogo" />
+
+        <TextView
+            android:id="@+id/bankcardnumber1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="80dp"
+
+            android:hint="XXXX"
+
+
+            android:textColor="@color/white"
+            android:textSize="21dp" />
+
+        <TextView
+            android:id="@+id/yourname"
+            android:layout_width="151dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="140dp"
+            android:ellipsize="end"
+            android:hint="NAME SURNAME"
+
+
+            android:maxLines="2"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="120dp"
+
+
+            android:hint="CARD HOLDER NAME"
+            android:textColorHint="@color/white"
+            android:textSize="13dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="120dp"
+
+
+            android:hint="CVV"
+            android:textColorHint="@color/white"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/bankcardnumber4"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="80dp"
+            android:hint="XXXX"
+
+            android:textColor="@color/white"
+            android:textSize="21dp" />
+
+        <TextView
+            android:id="@+id/cvvhere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="140dp"
+            android:hint=""
+
+            android:textColor="@color/white"
+            android:textSize="17dp"
+
+            />
+
+        <TextView
+            android:id="@+id/validthruhere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="140dp"
+            android:hint="MM/YY"
+
+            android:textColor="@color/white"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/bankcardnumber3"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="80dp"
+            android:hint="XXXX"
+
+            android:textColor="@color/white"
+
+            android:textSize="21dp" />
+
+        <TextView
+            android:id="@+id/bankcardnumber2"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="80dp"
+            android:hint="XXXX"
+            android:textColor="@color/white"
+            android:textSize="21dp"
+
+            />
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/bankcardnumber"
+        android:layout_width="205dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:gravity="center"
+
+        android:hint="XXXX XXXX XXXX XXXX"
+        android:inputType="number"
+        android:maxLength="16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.448" />
+
+    <EditText
+        android:id="@+id/validthru"
+        android:layout_width="205dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="MM/YY"
+        android:inputType="textPersonName"
+
+        android:maxLength="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.612" />
+
+    <EditText
+        android:id="@+id/cvv"
+        android:layout_width="205dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="CVV"
+        android:inputType="number"
+        android:maxLength="3"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.697"
+
+        />
+
+    <EditText
+        android:id="@+id/namee"
+        android:layout_width="205dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="CARD HOLDER NAME"
+
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.532" />
+
+    <TextView
+        android:id="@+id/PriceReceivedValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:padding="8dp"
+        android:text="Price"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cvv" />
+
+    <Button
+
+        android:id="@+id/paybutton"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/gradients"
+        android:gravity="center"
+        android:text="pay"
+        android:textColor="#fff"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PriceReceivedValue"
+        app:layout_constraintVertical_bias="0.589"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

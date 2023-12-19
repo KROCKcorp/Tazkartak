@@ -1,0 +1,29 @@
+{
+    "project_info": {
+        "project_number": "546676339105",
+        "project_id": "movieui-bfbc4",
+        "storage_bucket": "movieui-bfbc4.appspot.com"
+    },
+    "client": [
+        {
+            "client_info": {
+                "mobilesdk_app_id": "1:546676339105:android:60fcff3210ed4f463edbe0",
+                "android_client_info": {
+                    "package_name": "com.example.movieui"
+                }
+            },
+            "oauth_client": [ ],
+            "api_key": [
+                {
+                    "current_key": "AIzaSyBOZCw2sLzM_Jcw_WXoar77KO528Eap_dA"
+                }
+            ],
+            "services": {
+                "appinvite_service": {
+                    "other_platform_oauth_client": [ ]
+                }
+            }
+        }
+    ],
+    "configuration_version": "1"
+}
